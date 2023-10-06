@@ -91,7 +91,7 @@ export default function App({ useStore }) {
     //console.log(mutation);
     if (deltaY > 0 && mutation.curr_index !== 0) {
     } else {
-        console.log(!mutation.isPlaying ,!mutation.waitingForAnimation , !mutation.needsAnimation);
+        //console.log(!mutation.isPlaying ,!mutation.waitingForAnimation , !mutation.needsAnimation);
         if(!mutation.isPlaying && !mutation.waitingForAnimation && !mutation.needsAnimation){
 
           //actions.updateCurrIndex(mutation.curr_index + 1);

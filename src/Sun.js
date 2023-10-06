@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef} from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import Random from 'canvas-sketch-util/random';
 import { lerp, mapRange } from 'canvas-sketch-util/math';
