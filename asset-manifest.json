@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/space_resume/static/css/main.b6930c85.css",
-    "main.js": "/space_resume/static/js/main.d9486dd4.js",
+    "main.js": "/space_resume/static/js/main.eacfb70b.js",
     "static/js/787.3db31999.chunk.js": "/space_resume/static/js/787.3db31999.chunk.js",
+    "static/media/eyeOrb.glb": "/space_resume/static/media/eyeOrb.9a4b4b7a1cf4a04ffe38.glb",
     "static/media/testimonials-bg.jpg": "/space_resume/static/media/testimonials-bg.ad53899f436e208a9811.jpg",
     "static/media/astro.PNG": "/space_resume/static/media/astro.e716109b29d4a3cd6f72.PNG",
     "static/media/VicNiceley.PNG": "/space_resume/static/media/VicNiceley.fe316062a87a6cfa3c88.PNG",
@@ -29,6 +30,7 @@
     "static/media/fontawesome-webfont.ttf?v=4.0.3": "/space_resume/static/media/fontawesome-webfont.39f38361e3563f688a32.ttf",
     "static/media/librebaskerville-regular-webfont.ttf": "/space_resume/static/media/librebaskerville-regular-webfont.c5950393dc615b821fa2.ttf",
     "static/media/librebaskerville-bold-webfont.ttf": "/space_resume/static/media/librebaskerville-bold-webfont.68c08acc05aa00185759.ttf",
+    "static/media/simpleGeom.glb": "/space_resume/static/media/simpleGeom.d4739a422a923e35adc0.glb",
     "static/media/librebaskerville-italic-webfont.woff": "/space_resume/static/media/librebaskerville-italic-webfont.759baa8b5216a3446062.woff",
     "static/media/librebaskerville-italic-webfont.eot": "/space_resume/static/media/librebaskerville-italic-webfont.7d07c72e96a5c989ffb8.eot",
     "static/media/swarm.PNG": "/space_resume/static/media/swarm.d028f02d90cce3e9d481.PNG",
@@ -74,16 +76,17 @@
     "static/media/Vigenere.jpg": "/space_resume/static/media/Vigenere.9905454825b8a5635f7b.jpg",
     "static/media/fontello.eot?13439518": "/space_resume/static/media/fontello.e7b9f57fdd4a1faffd4b.eot",
     "static/media/fontello.ttf?13439518": "/space_resume/static/media/fontello.bea11b9ab41f753d3247.ttf",
+    "static/media/odinsTriangle.glb": "/space_resume/static/media/odinsTriangle.c78762c9b26bc180b790.glb",
     "static/media/fontello.svg?13439518": "/space_resume/static/media/fontello.769087948628efafec50.svg",
     "static/media/fontello.woff?13439518": "/space_resume/static/media/fontello.75a0066bb4cd6971750a.woff",
     "static/media/Snake.PNG": "/space_resume/static/media/Snake.fc4925689236040ef3e6.PNG",
     "index.html": "/space_resume/index.html",
     "main.b6930c85.css.map": "/space_resume/static/css/main.b6930c85.css.map",
-    "main.d9486dd4.js.map": "/space_resume/static/js/main.d9486dd4.js.map",
+    "main.eacfb70b.js.map": "/space_resume/static/js/main.eacfb70b.js.map",
     "787.3db31999.chunk.js.map": "/space_resume/static/js/787.3db31999.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6930c85.css",
-    "static/js/main.d9486dd4.js"
+    "static/js/main.eacfb70b.js"
   ]
 }
