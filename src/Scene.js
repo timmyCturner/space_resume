@@ -103,6 +103,8 @@ export function Scene({ init = true, mouse, cameraRef, jsonData,prevMutation,set
     needsUpdate= false;
 
   })
+  // <Shapes count={10} offset={4}   />
+  // <Shapes2 count={10} offset={4}   />
 
   return (
     <>
@@ -129,9 +131,9 @@ export function Scene({ init = true, mouse, cameraRef, jsonData,prevMutation,set
         <Stars count={50} offset={2}  />
         <Stars count={50} offset={3}  />
         <Stars count={50} offset={4}  />
-
         <Shapes count={10} offset={4}   />
-        <Shapes2 count={10} offset={4}   />
+
+
         <Track />
 
         <Rig jsonData = {jsonData}>

@@ -4,7 +4,7 @@ import { useFrame,useThree } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei'
 import {mapRange, lerp } from 'canvas-sketch-util/math';
 import Random from 'canvas-sketch-util/random';
-
+import shape from './models/odinsTriangle.glb'
 function generateRandomPointInSphericalShell(minRadius, maxRadius) {
   while (true) {
 
@@ -31,7 +31,7 @@ function generateRandomPointInSphericalShell(minRadius, maxRadius) {
 
 
 export function Shapes({ count,offset }) {
-  const { nodes, materials } = useGLTF('/odinsTriangle.glb')
+  const { nodes, materials } = useGLTF(shape)
   const mesh = useRef();
   const mat = useRef();
   const { size, viewport } = useThree();
@@ -121,4 +121,4 @@ export function Shapes({ count,offset }) {
     </instancedMesh>
   );
 }
-useGLTF.preload('/odinsTriangle.glb')
+useGLTF.preload(shape)

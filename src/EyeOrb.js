@@ -6,7 +6,7 @@ import { lerp, mapRange } from 'canvas-sketch-util/math';
 import useStore from './store'
 import About from './Components/About';
 import Random from 'canvas-sketch-util/random';
-
+import eyeOrb from './models/eyeOrb.glb'
 export function EyeOrb(props, width = 0.5, opacity = 0.25) {
 
 
@@ -21,7 +21,7 @@ export function EyeOrb(props, width = 0.5, opacity = 0.25) {
   //const materialRed = useRef();
   //console.log(mutation);
   const { nodes, materials } = useGLTF(
-    '/eyeOrb.glb'
+    eyeOrb
     // 'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/low-poly-spaceship/model.gltf'
   );
 
@@ -217,6 +217,6 @@ const screenTopLeft = cameraPosition.clone()
 
 
 useGLTF.preload(
-  '/eyeOrb.glb'
+  eyeOrb
   // 'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/low-poly-spaceship/model.gltf'
 );

@@ -10,7 +10,7 @@ import useStore from './store'
 import './css/default.css'
 import './css/fonts.css'
 import './css/layout.css'
-
+import resumeData from './Components/resumeData.json';
 
 extend(meshline);
 
@@ -91,7 +91,7 @@ export default function App({ useStore }) {
     //console.log(mutation);
     if (deltaY > 0 && mutation.curr_index !== 0) {
     } else {
-        //console.log(!mutation.isPlaying ,!mutation.waitingForAnimation , !mutation.needsAnimation);
+        console.log(!mutation.isPlaying ,!mutation.waitingForAnimation , !mutation.needsAnimation);
         if(!mutation.isPlaying && !mutation.waitingForAnimation && !mutation.needsAnimation){
 
           //actions.updateCurrIndex(mutation.curr_index + 1);
@@ -109,33 +109,40 @@ export default function App({ useStore }) {
   };
 
   useState(() => {
+    //console.log(resumeData);
+    setJsonData(resumeData)
+
     // Add a scroll event listener when the component mounts
     //console.log("useState");
     //window.addEventListener('wheel', handleScroll);
 
-    fetch('/resumeData.json', {
-      method: 'GET',
-      mode: 'cors', // Enable CORS
-      headers: {
-        'Content-Type': 'application/json',
-        // Additional headers if needed
-      },
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Process JSON data
-        //console.log('JSON data:', data);
-        setJsonData(data);
-
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
+    // fetch('resumeData.json', {
+    //   method: 'GET',
+    //   mode: 'cors', // Enable CORS
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     'Cache-Control': 'no-cache', // Add this header to bypass the cache
+    //     // Additional headers if needed
+    //   },
+    // })
+    //   .then(response => {
+    //     if (!response.ok) {
+    //       throw new Error('Network response was not ok');
+    //     }
+    //     return response.json();
+    //   })
+    //   .then(data => {
+    //     // Process JSON data
+    //     //console.log('JSON data:', data);
+    //     console.log(data);
+    //     setJsonData(data);
+    //
+    //   })
+    //   .catch(error => {
+    //
+    //     console.error('Error fetching data:', error);
+    //
+    //   });
     // Remove the scroll event listener when the component unmounts
     // return () => {
     //   window.removeEventListener('wheel', actions.handleScroll);

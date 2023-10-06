@@ -4,6 +4,7 @@ import { useFrame,useThree } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei'
 import {mapRange, lerp } from 'canvas-sketch-util/math';
 import Random from 'canvas-sketch-util/random';
+import shape from './models/simpleGeom.glb'
 
 function generateRandomPointInSphericalShell(minRadius, maxRadius) {
   while (true) {
@@ -31,7 +32,7 @@ function generateRandomPointInSphericalShell(minRadius, maxRadius) {
 
 
 export function Shapes2({ count,offset }) {
-  const { nodes, materials } = useGLTF('/simpleGeom.glb')
+  const { nodes, materials } = useGLTF(shape)
   const mesh = useRef();
   const mat = useRef();
   const { size, viewport } = useThree();
@@ -121,4 +122,4 @@ export function Shapes2({ count,offset }) {
     </instancedMesh>
   );
 }
-useGLTF.preload('/simpleGeom.glb')
+useGLTF.preload(shape)

@@ -33,7 +33,7 @@ export function Stars({ count,offset }) {
   const mesh = useRef();
   const mat = useRef();
   const { size, viewport } = useThree();
-  const aspect = size.width / viewport.width;
+
 
   const dummy = useMemo(() => new THREE.Object3D(), []);
 
@@ -71,7 +71,7 @@ export function Stars({ count,offset }) {
   useFrame((state) => {
     if (mat.current) {
       particles.forEach((particle, i) => {
-        const { xFactor, yFactor, zFactor, emission } = particle;
+        const {  emission } = particle;
 
         // You can modify the emission intensity here based on your animation logic
 
