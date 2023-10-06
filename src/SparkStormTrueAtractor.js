@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import React, { useRef, useEffect, useMemo } from 'react';
-import { useFrame, useThree } from '@react-three/fiber';
+import React, { useRef, useMemo } from 'react';
+import { useFrame } from '@react-three/fiber';
 import Random from 'canvas-sketch-util/random';
 import { lerp, mapRange } from 'canvas-sketch-util/math';
 
@@ -60,7 +60,7 @@ export function SparkStormTrueAtractor({ mouse, count, colors, radius = 1 }) {
             )
             .clone();
         });
-        const curve = new THREE.CatmullRomCurve3(points).getPoints(1000);
+        const curve = new THREE.CatmullRomCurve3(points).getPoints(500);
         return {
           color: colors[parseInt(colors.length * Math.random())],
           width: Math.max(0.1, (0.2 * index) / 10)/2,
@@ -68,12 +68,12 @@ export function SparkStormTrueAtractor({ mouse, count, colors, radius = 1 }) {
           curve,
         };
       }),
-    [count]
+    [count,colors,radius]
   );
 
   const ref = useRef();
-  const { size, viewport } = useThree();
-  const aspect = size.width / viewport.width;
+
+
   useFrame(() => {
     if (ref.current) {
       ref.current.rotation.x = lerp(

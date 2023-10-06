@@ -59,7 +59,7 @@ export function Sparks({ count, colors, radius = 1 }) {
             )
             .clone();
         });
-        const curve = new THREE.CatmullRomCurve3(points).getPoints(1000);
+        const curve = new THREE.CatmullRomCurve3(points).getPoints(200);
         return {
           color: colors[parseInt(colors.length * Math.random())],
           width: Math.max(0.1, (0.2 * index) / 10),

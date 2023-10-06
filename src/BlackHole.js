@@ -1,18 +1,15 @@
-import React, { useRef, useEffect } from 'react';
-import { useFrame, useThree } from '@react-three/fiber';
-import Random from 'canvas-sketch-util/random';
-import { lerp, mapRange } from 'canvas-sketch-util/math';
+import React from 'react';
 import { PortalBody } from './PortalBody';
 import { SparkStormCustom } from './SparkStormCustom';
 //http://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js/
 
 export function BlackHole() {
-  const planet = useRef();
+
 
   //console.log(planet);
   const props={
     scale:5.8,
-    count:50,
+    count:30,
     radius:1,
     ior:1
   }
@@ -47,18 +44,18 @@ export function BlackHole() {
   };
   return (
     <group position={[-22,0,0]}>
-    <mesh ref={planet} position={[0,0,0]} scale = {1}>
+    <mesh position={[0,0,0]} scale = {1}>
       <sphereGeometry args={[5, 36]} />
       <meshPhysicalMaterial
         color={"#000"}
-        roughness={0.5}
-        metalness={0.2}
+        roughness={1}
+        metalness={0}
         emissive={"#000"}
         emissiveIntensity={0}
       />
     </mesh>
     <PortalBody  props = {props}/>
-    <SparkStormCustom  count={250}  colors={colors.sunnyRainbow} radius = {3} />
+    <SparkStormCustom  count={100}  colors={colors.sunnyRainbow} radius = {3} />
     </group>
   );
 }

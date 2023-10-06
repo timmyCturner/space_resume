@@ -1,7 +1,6 @@
 import React, { useRef} from 'react';
-import { useFrame, useThree } from '@react-three/fiber';
-import Random from 'canvas-sketch-util/random';
-import { lerp, mapRange } from 'canvas-sketch-util/math';
+
+
 import { PortalBody } from './PortalBody';
 
 import { SparkStormTrueAtractor } from './SparkStormTrueAtractor';
@@ -42,7 +41,7 @@ export function Sun() {
   //console.log(planet);
   const props={
     scale:3.25,
-    count:20,
+    count:15,
     radius:0.75,
     ior:3
   }
@@ -71,7 +70,7 @@ export function Sun() {
         </mesh>
         <PortalBody props = {props}/>
       </group>
-      <SparkStormTrueAtractor  count={50} speed={0.4} colors={colors.sunnyRainbow} radius = {3}/>
+      <SparkStormTrueAtractor  count={40} speed={0.4} colors={colors.sunnyRainbow} radius = {3}/>
       </group>
   );
 }

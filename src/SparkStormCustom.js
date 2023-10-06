@@ -1,50 +1,24 @@
-import React, { useRef, useMemo, useEffect } from 'react';
+import React, { useRef, useMemo } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
-// import { Line,LineMaterial } from '@react-three/drei';
+
 import Random from 'canvas-sketch-util/random';
 import { lerp, mapRange } from 'canvas-sketch-util/math';
-// import { MeshLineMaterial } from 'react-three-fiber';
-// import { useMusicStore } from './useMusicStore';
+
 import {
   createAttractor,
   updateAttractor,
-  // dadrasAttractor,
-  // upDownAttractor,
-  // aizawaAttractor,
-  // arneodoAttractor,
-  // dequanAttractor,
   rosslerAttractor,
-
-
-  halversonAttractor
 } from './attractor';
 
 const simulation = () =>
   Random.pick([
-    //dadrasAttractor,
     rosslerAttractor
-    // halversonAttractor
-    // lorenzAttractor,
-    // lorenzMod2Attractor,
-
   ]);
 
 function Fatline({ radius, simulation, width, color }) {
 
   const line = useRef();
   const material = useRef();
-  const vocals = useRef(0);
-
-  // useEffect(
-  //   () =>
-  //     // useMusicStore.subscribe(
-  //     //   (value) => {
-  //     //     vocals.current = value;
-  //     //   },
-  //     //   (state) => state.vocals
-  //     // ),
-  //   []
-  // );
 
   useFrame(() => {
     if (line.current) {
@@ -66,7 +40,7 @@ function Fatline({ radius, simulation, width, color }) {
   });
 
 
-  const [positions, currentPosition] = useMemo(() => createAttractor(5), []);
+  const [positions, currentPosition] = useMemo(() => createAttractor(10), []);
   //console.log(material,width,color);
   return (
     <mesh>
@@ -90,8 +64,8 @@ export function SparkStormCustom({ count, colors, radius = 10 }) {
       new Array(count).fill().map(() => {
         return {
           color: Random.pick(colors),
-          width: Random.range(0.1, 0.2),
-          speed: Random.range(12, 15),
+          width: Random.range(0.2, 0.4),
+          speed: Random.range(10, 12),
           simulation: simulation(),
           radius: Random.range(2, 2.25) * radius,
         };
