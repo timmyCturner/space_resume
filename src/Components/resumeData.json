@@ -1,0 +1,228 @@
+{
+  "main": {
+    "name":"Tim Kueny",
+    "occupation":"Future Software Developer",
+    "description":"I am a recent college graduate looking for employment as a software developer or a software engineer in any feild",
+    "image":"LinkedIn.jpg",
+    "bio":"I recently graduated from Virginia Tech's School of Engineer with a degree in computer science.  Front End Developer. I work well as part of a team and will be an asset to any organization.",
+    "contactmessage":"Write me an email @kuenytc5@vt.edu. I am currently looking for jobs in the Knoxville area",
+    "email": "kuenytc5@vt.edu",
+    "phone": "203-516-1970",
+    "address":{
+      "street":"807 Creekside Terrace Way",
+      "city":"Knoxville",
+      "state":"TN",
+      "zip": "37932"
+    },
+    "website": "https://timmycturner.github.io/profile/",
+    "resumedownload":"Resume_Kueny.pdf",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/tim.kueny.5",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/tim-kueny-5b6894160",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/timmyCturner/profile",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "education":[
+      {
+        "school":"Virginia Tech, School of Engineering",
+        "degree":"BS in Computer Science",
+        "graduated":"January 2021",
+        "description":"As a Computer Science Major, I learned multiple languages essential to programming such as C, Java and Javascript, as well as hands on experience with a range of multiple other languages."
+      }
+    ],
+    "work":[
+      {
+        "company":"Round Three",
+        "title":"Lead Front End Developer and Project Manager.r",
+        "years":"January 2022 - July 2022",
+        "skills":["PHP","JavaScript","JQuery","NodeJS","Three.js","Python","Blender","HTML","CSS"],
+        "description":"Using a Three.js framework to create a landscape UI that presented information. Began creating and developing the home screen and environment as well and pulling data from a custom MySQL Server and displaying that creatively on our custom Apache Server. Lead a team to develop, modify and implement various aspects of model development using Blender, Python. Also coordinated and worked with a small team of developers for front end development, back end development, and IOS and Android app development."
+      },
+      {
+        "company":"Anion Creative",
+        "title":"Junior Developer",
+        "years":"May 2021-Present",
+        "skills":["PHP","JavaScript","JQuery","Wordpress","Woocommerce","HTML","CSS"],
+        "description":"Junior developer involved in all aspects of website development: graphic design, website design, and website development. At a client’s request, a comp would be developed personally but most often by a client or coworker. The websites’ were structured with Wordpress and Woocommerce for the backend framework, PHP and JQuery for the middle ground, and HTML CSS for the front end."
+      },
+      {
+        "company":"CompuCon/Lowes",
+        "title":"IT Technician",
+        "years":"March 2021",
+        "skills":["Trouble Shooting", "Customer Service"],
+        "description":"This short contracting job consisted of traveling to different Lowes locations in order to fix problems with registers, signature capture machines and other items through out all departments. This job required lots of hands-on learning with little preparation."
+      },
+      {
+        "company":"Sharkey’s Wing and Rib Joint",
+        "title":"Cook",
+        "years":"June 2019-March 2020",
+        "skills":["Pizza", "Burgers", "Wings"],
+        "description":"Employed as a cook between school hours. Responsible for cooking a wide range of foods including burgers, wraps, wings, and ribs. Worked as member of a team for the timely execution of orders. Responsible for the open and close the restaurant under Board of Health guidelines. "
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"90%"
+      },
+      {
+        "name":"PHP",
+        "level":"85%"
+      },
+      {
+        "name":"Three.js",
+        "level":"95%"
+      },
+      {
+        "name":"C",
+        "level":"80%"
+      },
+      {
+        "name":"Java",
+        "level":"80%"
+      },
+      {
+        "name":"JavaScript",
+        "level":"95%"
+      },
+      {
+        "name":"Git",
+        "level":"85%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"90%"
+      },
+      {
+        "name":"CSS",
+        "level":"90%"
+      },
+      {
+        "name":"HTML5",
+        "level":"90%"
+      }
+    ]
+  },
+  "anioncreative":{
+    "projects": [
+      {
+        "title":"Peddlers Pawn",
+        "category":"Pawn Shop",
+        "image":"PP.PNG",
+        "url":"https://peddlerpawn.com/"
+      },
+      {
+        "title":"Warrington Eye Care",
+        "category":"Doctors Office",
+        "image":"WWEC.PNG",
+        "url":"https://warringtoneyecare.com/"
+      },
+      {
+        "title":"Kindred Spirit Mailbox",
+        "category":"Vacation Rental Site",
+        "image":"KindredSpiritMailbox.PNG",
+        "url":"https://kindredspiritvacation.com/"
+
+      },
+      {
+        "title":"Vic Niceley Art Work",
+        "category":"Art Selling Website",
+        "image":"VicNiceley.PNG",
+        "url":"https://vicniceley.com/"
+
+      },
+      {
+        "title":"Moores Heating and Air",
+        "category":"Heating and Air Conditioning Promotion",
+        "image":"MooresHA.PNG",
+        "url":"https://mooresheatingandair.com/"
+
+      }
+    ]
+  },
+  "featured":{
+    "featured": [
+      {}
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Logo Generator",
+        "category":"AI Image Generator",
+        "image":"StableDiffAI.PNG",
+        "url":"https://www.underdognexus.com/ai-icons/"
+
+      },
+      {
+        "title":"Swarm",
+        "category":"lighting and patterns with three.js",
+        "image":"swarm.PNG",
+        "url":"https://timmycturner.github.io/swarm"
+
+      },
+      {
+        "title":"Astro",
+        "category":"A game built with three.js",
+        "image":"astro.PNG",
+        "url":"https://timmycturner.github.io/astro"
+
+      },
+      {
+        "title":"Vigenere Cypher",
+        "category":"Backend development project to decypher any Vigenere cypher",
+        "image":"Vigenere.jpg",
+        "url":"https://timmycturner.github.io/cryptograph"
+
+      },
+      {
+        "title":"SnakeAI",
+        "category":"Classic Snake with a Nueral Network",
+        "image":"Snake.PNG",
+        "url":"https://github.com/timmyCturner/Snake"
+
+      },
+      {
+        "title":"Envirovision",
+        "category":"Artistic look on how polution effects the enviorment",
+        "image":"EnvirovisionI.jpg",
+        "url":"https://samiea.github.io/Envirovision/"
+
+      },
+      {
+        "title":"Royal Road Initiative",
+        "category":"Using machine learning to determine sucsess of a book",
+        "image":"KNN.png",
+        "url":"https://github.com/TheTimTurner/RoyalRoad/blob/master/RoyalRoad.pdf"
+
+      }
+
+    ]
+  },
+  "testimonials":{
+    "testimonials":[
+      {
+        "text":"",
+        "user":""
+      },
+      {
+        "text":"",
+        "user":""
+      }
+    ]
+  }
+}
